@@ -6,6 +6,7 @@ import requests
 
 # program modules
 import api_calls
+import filesystem
 
 
 # retrieve the gallery IDs and paths stored in galleries.txt
@@ -21,8 +22,12 @@ def get_data():
 
 # save the image from raw data to jpg
 def save_image(file_path, raw_img):
-    with open(file_path, "wb") as f:
-        shutil.copyfileobj(raw_img, f)
+    try:
+        with open(file_path, "wb") as f:
+            shutil.copyfileobj(raw_img, f)
+    except Exception as error:
+        filesystem.log_error(error)
+        print(f"Error Saving Image: {file_path}")
 
 
 # download the raw image data and other useful info
