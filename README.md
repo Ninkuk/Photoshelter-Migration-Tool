@@ -52,6 +52,6 @@ Contributions are what make the open source community such an amazing place to b
 
 
 ## Contact
-Ninad Kulkarni - nkulka12@asu.edu
+Ninad Kulkarni - ninadk.dev@gmail.com
 <br>
 Project Link: [https://github.com/Ninkuk/Photoshelter-Migration-Tool](https://github.com/Ninkuk/Photoshelter-Migration-Tool)
